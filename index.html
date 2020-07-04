@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Resume Deni Ardiyanto</title>
     <!-- Meta -->
@@ -7,148 +8,188 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bootstrap 4 Portfolio/Resume Theme for Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="favicon.ico">  
-    
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
-    
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet'
+        type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
     <!-- FontAwesome JS -->
     <script defer src="assets/fontawesome/js/all.js"></script>
-    
+
     <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+
     <!-- github calendar css -->
     <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
-    <!-- github activity css -->    
+    <!-- github activity css -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
     <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
-    
-    <!-- Theme CSS -->  
+
+    <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
 
     <!--modal style-->
     <style>
-    body {font-family: Arial, Helvetica, sans-serif;}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-    /* The Modal (background) */
-    .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    }
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
 
-    /* Modal Content */
-    .modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
-    }
+        /* Modal Content */
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            border: 1px solid #888;
+            width: 80%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s
+        }
 
-    /* Add Animation */
-    @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
-    to {top:0; opacity:1}
-    }
+        /* Add Animation */
+        @-webkit-keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0
+            }
 
-    @keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
-    }
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
 
-    /* The Close Button */
-    .close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    }
+        @keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0
+            }
 
-    .close:hover,
-    .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-    }
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
 
-    .modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-    }
+        /* The Close Button */
+        .close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
 
-    .modal-body {padding: 2px 16px;}
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
 
-    .modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-    }
+        .modal-header {
+            padding: 2px 16px;
+            background-color: #5cb85c;
+            color: white;
+        }
+
+        .modal-body {
+            padding: 2px 16px;
+        }
+
+        .modal-footer {
+            padding: 2px 16px;
+            background-color: #5cb85c;
+            color: white;
+        }
     </style>
-    
-</head> 
+
+</head>
 
 <body>
-    <!-- ******HEADER****** --> 
+    <!-- ******HEADER****** -->
     <header class="header">
-        <div class="container clearfix">                       
-            <img class="profile-image img-fluid float-left rounded-circle" src="assets/images/profileDeni.png" alt="profile image" />
+        <div class="container clearfix">
+            <img class="profile-image img-fluid float-left rounded-circle" src="assets/images/profileDeni.png"
+                alt="profile image" />
             <div class="profile-content float-left">
                 <h1 class="name">Deni Ardiyanto</h1>
-                <h2 class="desc">[BE] Programmer/ Software Engineer</h2>   
+                <h2 class="desc">Programmer/ Software Engineer</h2>
                 <ul class="social list-inline">
-                    <li class="list-inline-item"><a href="https://twitter.com/deniardi4" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/deniardi4/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li class="list-inline-item"><a href="https://github.com/deniardiyanto" target="_blank"><i class="fab fa-github-alt"></i></a></li>    
-                    <li class="list-inline-item"><a href="https://stackoverflow.com/users/13711960/deni" target="_blank"><i class="fab fa-stack-overflow"></i></a></li>   
-                    <li class="list-inline-item last-item"><a href="https://familyministry.church/wp-content/uploads/2018/10/not-yet.png" target="_blank"><i class="fab fa-codepen"></i></a></li>                
-                </ul> 
-            </div><!--//profile-->
-            <a class="btn btn float-right" id="myBtn"><i class="fas fa-paper-plane"></i> Kontak saya</a> 
+                    <li class="list-inline-item"><a href="https://twitter.com/deniardi4" target="_blank"><i
+                                class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/deniardi4/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/deniardiyanto" target="_blank"><i
+                                class="fab fa-github-alt"></i></a></li>
+                    <li class="list-inline-item"><a href="https://stackoverflow.com/users/13711960/deni"
+                            target="_blank"><i class="fab fa-stack-overflow"></i></a></li>
+                    <li class="list-inline-item last-item"><a
+                            href="https://familyministry.church/wp-content/uploads/2018/10/not-yet.png"
+                            target="_blank"><i class="fab fa-codepen"></i></a></li>
+                </ul>
+            </div>
+            <!--//profile-->
+            <a class="btn btn float-right" id="myBtn"><i class="fas fa-paper-plane"></i> Kontak saya</a>
             <!--modal-->
             <!-- The Modal -->
 
             <div id="myModal" class="modal">
 
-            <!-- Modal content -->
-            <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-                <div class="modal-header">
-                <span class="close">&times;</span>
+                <!-- Modal content -->
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <p>Pesan :</p>
+                            <p>"Saya tertarik dengan profil anda!"</p>
+                        </div>
+                        <button type="submit" class="btn"><a
+                                href="https://api.whatsapp.com/send?phone=6281395475519&text=Saya%0Atertarik%0Adengan%0Aprofil%0Aanda!"
+                                target="_blank">Kirim Whattsapp!</a></button>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body">
-                <p>Pesan :</p>
-                <p>"Saya tertarik dengan profil anda!"</p>
-                </div>
-                <button type="submit" class="btn"><a href="https://api.whatsapp.com/send?phone=6281395475519&text=Saya%0Atertarik%0Adengan%0Aprofil%0Aanda!" target="_blank">Kirim Whattsapp!</a></button>
-                <div class="modal-footer">
-                </div>
-            </div>
-            </div>
 
             </div>
 
             <!---->
-        </div><!--//container-->
-    </header><!--//header-->
-    
+        </div>
+        <!--//container-->
+    </header>
+    <!--//header-->
+
     <div class="container sections-wrapper">
         <div class="row">
             <div class="primary col-lg-8 col-12">
@@ -156,51 +197,81 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Tentang saya</h2>
                         <div class="content">
-                            <p>Saya suka mempelajari dan mempraktekkan tutorial pemrograman lebih ke algoritma pemrograman serta penerapan langsung di project, mengikuti berbakai kursus pemrograman yang implementasi studi kasus langsung, memiliki minat dan passion menjadi Backend Programmer dan Data Scientist.</p>
-                         
-                        </div><!--//content-->
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-    
-               <section class="latest section">
+                            <p>Saya suka mempelajari dan mempraktekkan tutorial pemrograman lebih ke algoritma
+                                pemrograman serta penerapan langsung di project, mengikuti berbakai kursus pemrograman
+                                yang implementasi studi kasus langsung, memiliki minat dan passion menjadi Backend
+                                Programmer dan Data Scientist.</p>
+
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </section>
+                <!--//section-->
+
+                <section class="latest section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Project Terakhir</h2>
-                        <div class="content">    
-                                               
+                        <div class="content">
+
                             <div class="item featured text-center">
-                                
+
                                 <div class="featured-image has-ribbon">
                                     <a href="https://github.com/deniardiyanto?tab=repositories" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/fwdesainer.JPG" alt="project name" />
+                                        <img class="img-fluid project-image rounded shadow-sm"
+                                            src="assets/images/projects/fwdesainer.JPG" alt="project name" />
                                     </a>
                                     <div class="ribbon">
                                         <div class="text">New</div>
                                     </div>
                                 </div>
-                                
-                                <h3 class="title mb-3"><a href="https://github.com/deniardiyanto?tab=repositories" target="_blank">Hefa Store - Produk web desainer UI&UX adobe XD + Frontend Native PHP</a></h3>
-                                    
-                                <div class="desc text-left">                                    
-                                    <p>Produk ini merupakan hasil dari pelatihan fullstack web designer yang saya ikuti, menampilkan produk hefa store dengan implementasi UI&UX.</p>
+
+                                <h3 class="title mb-3"><a href="https://github.com/deniardiyanto?tab=repositories"
+                                        target="_blank">Hefa Store - Produk web desainer UI&UX adobe XD + Frontend
+                                        Native PHP</a></h3>
+
+                                <div class="desc text-left">
+                                    <p>Produk ini merupakan hasil dari pelatihan fullstack web designer yang saya ikuti,
+                                        menampilkan produk hefa store dengan implementasi UI&UX.</p>
                                 </div>
-                                <a class="btn btn-cta-secondary" href="https://github.com/deniardiyanto?tab=repositories" target="_blank"><i class="fas fa-thumbs-up"></i> Back my project</a>                 
-                            </div><!--//item-->
+                                <a class="btn btn-cta-secondary"
+                                    href="https://github.com/deniardiyanto?tab=repositories" target="_blank"><i
+                                        class="fas fa-thumbs-up"></i> Back my project</a>
+                            </div>
+                            <!--//item-->
                             <hr class="divider" />
                             <div class="item row">
-                                <a class="col-md-4 col-12" href="https://mikrotik-academy.uty.ac.id/gallery-participant/39" target="_blank">
-                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/event/mikrotik.jpg" alt="project name" />
+                                <a class="col-md-4 col-12"
+                                    href="https://mikrotik-academy.uty.ac.id/gallery-participant/39" target="_blank">
+                                    <img class="img-fluid project-image rounded shadow-sm"
+                                        src="assets/images/event/mikrotik.jpg" alt="project name" />
                                 </a>
                                 <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://mikrotik-academy.uty.ac.id/gallery-participant/41" target="_blank">Event - Pelatihan Mikrotik Academy MTCNA</a></h3>
-                                    <div class="desc text-left">                                    
-                                        <p>Pada 03 Desember 2019, saya mengikuti pelatihan dasar jaringan Mikrotik MTCNA yang diselenggarakan atas kerjasama dari mikrotik academy dengan Pusdiklat dan sertifikasi UTY, pada pelatihan ini diajarkan mengenai dasar mikrotik serta implementasi langsung router mikrotik baik model jaringan kabel maupun nirkabel/wireless, pada akhir pelatihan dilakukan test secara online oleh <a href="https://mikrotik.com/training/academy" target="_blank">Mikrotik.com</a></p>
+                                    <h3 class="title"><a
+                                            href="https://mikrotik-academy.uty.ac.id/gallery-participant/41"
+                                            target="_blank">Event - Pelatihan Mikrotik Academy MTCNA</a></h3>
+                                    <div class="desc text-left">
+                                        <p>Pada 03 Desember 2019, saya mengikuti pelatihan dasar jaringan Mikrotik MTCNA
+                                            yang diselenggarakan atas kerjasama dari mikrotik academy dengan Pusdiklat
+                                            dan sertifikasi UTY, pada pelatihan ini diajarkan mengenai dasar mikrotik
+                                            serta implementasi langsung router mikrotik baik model jaringan kabel maupun
+                                            nirkabel/wireless, pada akhir pelatihan dilakukan test secara online oleh <a
+                                                href="https://mikrotik.com/training/academy"
+                                                target="_blank">Mikrotik.com</a></p>
                                     </div>
                                     <p class="mb-2"></p>
-                                    <p><a class="more-link" href="https://mikrotik-academy.uty.ac.id/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                                    <a class="btn btn-cta-secondary" href="https://mikrotik.com/training/certificates/b173994c0109c6b3d1f3" target="_blank"><i class="far fa-hand-point-right" style='font-size:24px'></i> Lihat sertifikat</a>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                            
+                                    <p><a class="more-link" href="https://mikrotik-academy.uty.ac.id/"
+                                            target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a>
+                                    </p>
+                                    <a class="btn btn-cta-secondary"
+                                        href="https://mikrotik.com/training/certificates/b173994c0109c6b3d1f3"
+                                        target="_blank"><i class="far fa-hand-point-right" style='font-size:24px'></i>
+                                        Lihat sertifikat</a>
+                                </div>
+                                <!--//desc-->
+                            </div>
+                            <!--//item-->
+
                             <!-- <div class="item row">
                                 <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devcard-bootstrap-4-vcard-portfolio-template-for-software-developers/" target="_blank">
                                 <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-2.png" alt="project name" />
@@ -209,9 +280,11 @@
                                     <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devcard-bootstrap-4-vcard-portfolio-template-for-software-developers/" target="_blank">DevCard - Bootstrap 4 Portfolio Template for Software Developers</a></h3>
                                     <p class="mb-2">You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
                                     <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devcard-bootstrap-4-vcard-portfolio-template-for-software-developers/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                                </div> --><!--//desc-->                          
-                            <!-- </div> --><!--//item-->
-                            
+                                </div> -->
+                            <!--//desc-->
+                            <!-- </div> -->
+                            <!--//item-->
+
                             <!--  <div class="item row">
                                 <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/" target="_blank">
                                 <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-3.png" alt="project name" />
@@ -220,10 +293,10 @@
                                     <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/" target="_blank">Instance - Bootstrap 4 Portfolio Template for Aspiring Full Stack Developers</a></h3>
                                     <p class="mb-2">You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
                                     <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                                </div>//desc-->                          
+                                </div>//desc-->
                             <!-- </div>//item -->
-                            
-                           <!--  <div class="item row">
+
+                            <!--  <div class="item row">
                                 <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank">
                                 <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-4.png" alt="project name" />
                                 </a>
@@ -231,8 +304,9 @@
                                     <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank">Nova Pro - Bootstrap 4 Template for Mobile Startups</a></h3>
                                     <p class="mb-2">You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus.</p>
                                     <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                                </div><!//desc-->                          
-                            <!-- </div> --><!--//item-->                        
+                                </div><!//desc-->
+                            <!-- </div> -->
+                            <!--//item-->
                             <!-- <div class="item row">
                                 <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/" target="_blank">
                                 <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-5.png" alt="project name" />
@@ -241,189 +315,282 @@
                                     <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/" target="_blank">DevStudio - Bootstrap 4 Template for WebDev Agencies and Freelance Developers</a></h3>
                                     <p class="mb-2"> You can put one of your secondary projects here. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
                                     <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                                </div><!//desc-->                          
-                           <!--  </div>//item-->
-                            
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                
-                </section><!--//section-->
-                
+                                </div><!//desc-->
+                            <!--  </div>//item-->
+
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </section>
+                <!--//section-->
+
                 <section class="projects section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Project Lainnya</h2>
                         <div class="content">
                             <div class="item">
-                                <h3 class="title"><a href="https://github.com/deniardiyanto?tab=repositories" target="_blank">DWT Compression image VS Huffman Compression image</a> <span class="badge badge-theme">Update-Python</span></h3>
-                                <p class="summary">Perbandingan metode DWT (Descrete Wavelet Transform) dan metode Huffman terhadap kompresi citra digital build & develop by Google colaboratory</p>
-                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/ta.png" alt="project name" />
-                                <p><a class="more-link" href="https://github.com/deniardiyanto/Skripsi" target="_blank"><i class="fas fa-external-link-alt"></i>Clone/ Download</a></p>
-                            </div><!--//item-->
+                                <h3 class="title"><a href="https://github.com/deniardiyanto?tab=repositories"
+                                        target="_blank">DWT Compression image VS Huffman Compression image</a> <span
+                                        class="badge badge-theme">Update-Python</span></h3>
+                                <p class="summary">Perbandingan metode DWT (Descrete Wavelet Transform) dan metode
+                                    Huffman terhadap kompresi citra digital build & develop by Google colaboratory</p>
+                                <img class="img-fluid project-image rounded shadow-sm"
+                                    src="assets/images/projects/ta.png" alt="project name" />
+                                <p><a class="more-link" href="https://github.com/deniardiyanto/Skripsi"
+                                        target="_blank"><i class="fas fa-external-link-alt"></i>Clone/ Download</a></p>
+                            </div>
+                            <!--//item-->
                             <div class="item">
-                                <h3 class="title"><a href="https://github.com/deniardiyanto?tab=repositories" target="_blank">Aplikasi pindah penduduk kabupaten Sleman</a> <span class="badge badge-theme">Update-PHP</span></h3>
-                                <p class="summary">Appduk berbasis website responsive mobile version, build dengan Codeigniter v3.1.4, MySQL, Bootstrap v3.3.7</p>
-                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/kpzero.JPG" alt="project name" />
-                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/kp.JPG" alt="project name" />
-                                <p><a class="more-link" href="https://github.com/deniardiyanto/appduk" target="_blank"><i class="fas fa-external-link-alt"></i>Clone/ Download</a></p>
-                            </div><!--//item-->
+                                <h3 class="title"><a href="https://github.com/deniardiyanto?tab=repositories"
+                                        target="_blank">Aplikasi pindah penduduk kabupaten Sleman</a> <span
+                                        class="badge badge-theme">Update-PHP</span></h3>
+                                <p class="summary">Appduk berbasis website responsive mobile version, build dengan
+                                    Codeigniter v3.1.4, MySQL, Bootstrap v3.3.7</p>
+                                <img class="img-fluid project-image rounded shadow-sm"
+                                    src="assets/images/projects/kpzero.JPG" alt="project name" />
+                                <img class="img-fluid project-image rounded shadow-sm"
+                                    src="assets/images/projects/kp.JPG" alt="project name" />
+                                <p><a class="more-link" href="https://github.com/deniardiyanto/appduk"
+                                        target="_blank"><i class="fas fa-external-link-alt"></i>Clone/ Download</a></p>
+                            </div>
+                            <!--//item-->
                             <div class="item">
-                                <h3 class="title"><a href="https://github.com/deniardiyanto?tab=repositories" target="_blank">Project on progress..</a> <span class="badge badge-theme">-</span></h3>
+                                <h3 class="title"><a href="https://github.com/deniardiyanto?tab=repositories"
+                                        target="_blank">Project on progress..</a> <span
+                                        class="badge badge-theme">-</span></h3>
                                 <p class="summary">Project on progress..</p>
-                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/work in progress.gif" alt="project name" />
-                                <p><a class="more-link" href="https://github.com/deniardiyanto?tab=repositories" target="_blank"><i class="fas fa-external-link-alt"></i>Clone/ Download</a></p>
-                            </div><!--//item-->
+                                <img class="img-fluid project-image rounded shadow-sm"
+                                    src="assets/images/projects/work in progress.gif" alt="project name" />
+                                <p><a class="more-link" href="https://github.com/deniardiyanto?tab=repositories"
+                                        target="_blank"><i class="fas fa-external-link-alt"></i>Clone/ Download</a></p>
+                            </div>
+                            <!--//item-->
                             <!-- <div class="item">
                                 <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/nova-bootstrap-landing-page-template-for-mobile-apps/" target="_blank">Nova - Free App Landing Page Template for App Developers</a> <span class="badge badge-theme">Free</span></h3>
                                 <p class="summary">Provide a brief description of your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel purus enim. Etiam tortor felis, fermentum ac ultrices sed.</p>
                                 <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/nova-bootstrap-landing-page-template-for-mobile-apps/" target="_blank"><i class="fas fa-external-link-alt"></i>Download Now</a></p>
-                            </div> --><!--//item-->
-                            
-                            <a class="btn btn-cta-secondary" href="https://github.com/deniardiyanto" target="_blank">More on GitHub <i class="fas fa-chevron-right pt-1"></i></a>
-                            
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-                
+                            </div> -->
+                            <!--//item-->
+
+                            <a class="btn btn-cta-secondary" href="https://github.com/deniardiyanto"
+                                target="_blank">More on GitHub <i class="fas fa-chevron-right pt-1"></i></a>
+
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </section>
+                <!--//section-->
+
                 <section class="experience section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Pengalaman kerja</h2>
                         <div class="content">
                             <div class="item">
-                                <h3 class="title">Web Programmer - <span class="place"><a href="#">Bank Jateng</a></span> <span class="year">(Jan-Apr 2019)</span></h3>
-                                <p>Memperoleh predikat baik pada hasil magang yang telah dijalani, membantu membangun program e-magang (membuat user manual aplikasi permohonan magang dan riset) dan e- planning (dashboard aplikasi) untuk konsumsi internal kantor pusat Bank Jateng</p>
-                            </div><!--//item-->
+                                <h3 class="title">Web Programmer - <span class="place"><a href="#">Bank
+                                            Jateng</a></span> <span class="year">(Jan-Apr 2019)</span></h3>
+                                <p>Memperoleh predikat baik pada hasil magang yang telah dijalani, membantu membangun
+                                    program e-magang (membuat user manual aplikasi permohonan magang dan riset) dan e-
+                                    planning (dashboard aplikasi) untuk konsumsi internal kantor pusat Bank Jateng</p>
+                            </div>
+                            <!--//item-->
                             <!-- <div class="item">
                                 <h3 class="title">Software Engineer - <span class="place"><a href="#">Google</a></span> <span class="year">(2013 - 2014)</span></h3>
                                 <p>Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
-                            </div> --><!--//item-->
-                            
+                            </div> -->
+                            <!--//item-->
+
                             <!-- <div class="item">
                                 <h3 class="title">Software Engineer - <span class="place"><a href="#">eBay</a></span> <span class="year">(2012 - 2013)</span></h3>
                                 <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-                            </div> --><!--//item-->
-                            
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                <!-- </section> --><!--//section-->
-                <!-- <section class="github section">
+                            </div> -->
+                            <!--//item-->
+
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                    <!-- </section> -->
+                    <!--//section-->
+                    <!-- <section class="github section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">GitHub</h2> -->
-                        <!-- <p>Grafik github saya, using github calendar <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget.  -->
-                        
-                        <!-- <div id="github-graph" class="github-graph">
+                    <!-- <p>Grafik github saya, using github calendar <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget.  -->
 
-                        </div> --><!--//github-graph-->
+                    <!-- <div id="github-graph" class="github-graph">
 
-                        <!-- <p>You can also embed your GitHub activities using Casey Scarborough's <a href="https://github.com/caseyscarborough/github-activity" target="_blank">GitHub Activity Stream</a> widget.         -->
-                        <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->                       
-                        <!-- <div id="ghfeed" class="ghfeed">
-                        </div> --><!--//ghfeed-->
-                        
-                    <!-- </div> --><!--//secton-inner-->
-                <!-- </section> --><!--//section-->
-            </div><!--//primary-->
+                        </div> -->
+                    <!--//github-graph-->
+
+                    <!-- <p>You can also embed your GitHub activities using Casey Scarborough's <a href="https://github.com/caseyscarborough/github-activity" target="_blank">GitHub Activity Stream</a> widget.         -->
+                    <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->
+                    <!-- <div id="ghfeed" class="ghfeed">
+                        </div> -->
+                    <!--//ghfeed-->
+
+                    <!-- </div> -->
+                    <!--//secton-inner-->
+                    <!-- </section> -->
+                    <!--//section-->
+            </div>
+            <!--//primary-->
             <div class="secondary col-lg-4 col-12">
-                 <aside class="info aside section">
+                <aside class="info aside section">
                     <div class="section-inner shadow-sm rounded">
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Magelang, Indonesia</li>
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="mailto:deniardi4@gmail.com">deniardi4@gmail.com</a></li>
-                                <a class="btn btn-cta-primary btn-download" href="https://drive.google.com/file/d/1wXl_2Drfeh-iCHNEsDZmJkUN6zP3sgjG/view?usp=sharing" target="_blank"><i class="fas fa-download"></i> Download Berkas CV</a>
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Magelang,
+                                    Indonesia</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a
+                                        href="mailto:deniardi4@gmail.com">deniardi4@gmail.com</a></li>
+                                <a class="btn btn-cta-primary btn-download"
+                                    href="https://drive.google.com/file/d/1wXl_2Drfeh-iCHNEsDZmJkUN6zP3sgjG/view?usp=sharing"
+                                    target="_blank"><i class="fas fa-download"></i> Download Berkas CV</a>
                             </ul>
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//aside-->
-                
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+                <!--//aside-->
+
                 <aside class="skills aside section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Keterampilan</h2>
                         <div class="content">
                             <p class="intro">
-                                Adapun kemampuan yang saya miliki ditampilkan pada draft berikut, meliputi Hardskill yang saya peroleh dari perguruan tinggi maupun pelatihan dan otodidak.</p>
-                            
+                                Adapun kemampuan yang saya miliki ditampilkan pada draft berikut, meliputi Hardskill
+                                yang saya peroleh dari perguruan tinggi maupun pelatihan dan otodidak.</p>
+
                             <div class="skillset">
-                               
-                                <div class="item">
-                                    <h3 class="level-title">Python &amp; Machine learning<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Basic</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="60%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">PHP &amp; Javascipt<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Pro</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="90%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Bootstrap &amp; MySQL<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Pro</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="90%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Codeigniter &amp; Lumen<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Basic</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="60%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title">Jaringan Mikrotik-MTCNA<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Medium</span></h3>
+                                    <h3 class="level-title">Python &amp; Machine learning<span class="level-label"
+                                            data-toggle="tooltip" data-placement="left" data-animation="true"
+                                            title="You can use the tooltip to explain more about your skill level..."><i
+                                                class="fas fa-info-circle"></i>Basic</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="60%">
+                                        </div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">PHP &amp; Javascipt<span class="level-label"
+                                            data-toggle="tooltip" data-placement="left" data-animation="true"
+                                            title="You can use the tooltip to explain more about your skill level..."><i
+                                                class="fas fa-info-circle"></i>Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="90%">
+                                        </div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Bootstrap &amp; MySQL<span class="level-label"
+                                            data-toggle="tooltip" data-placement="left" data-animation="true"
+                                            title="You can use the tooltip to explain more about your skill level..."><i
+                                                class="fas fa-info-circle"></i>Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="90%">
+                                        </div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Codeigniter &amp; Lumen<span class="level-label"
+                                            data-toggle="tooltip" data-placement="left" data-animation="true"
+                                            title="You can use the tooltip to explain more about your skill level..."><i
+                                                class="fas fa-info-circle"></i>Basic</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="60%">
+                                        </div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Jaringan Mikrotik-MTCNA<span class="level-label"
+                                            data-toggle="tooltip" data-placement="left" data-animation="true"
+                                            title="You can use the tooltip to explain more about your skill level..."><i
+                                                class="fas fa-info-circle"></i>Medium</span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="78%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <p><a class="more-link" href="https://github.com/deniardiyanto" target="_blank"><i class="fas fa-external-link-alt"></i>Temukan lebih di GitHub</a></p> 
-                            </div>              
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//section-->
-                
+                                        </div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
+
+                                <p><a class="more-link" href="https://github.com/deniardiyanto" target="_blank"><i
+                                            class="fas fa-external-link-alt"></i>Temukan lebih di GitHub</a></p>
+                            </div>
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+                <!--//section-->
+
                 <aside class="testimonials aside section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Testimoni</h2>
                         <div class="content">
                             <div class="item">
-                                <blockquote class="quote">                                  
-                                    <p><i class="fas fa-quote-left"></i>Deni menunjukkan perkembangan yang signifikan, untuk build app, memiliki semangat belajar yang tinggi dan rasa ingin tahu yang kuat.</p>
-                                </blockquote>                
-                                <p class="source"><span class="name">Mas candra</span><br /><span class="title"></span></p>                                                             
-                            </div><!--//item-->
-                            
-                            <p><a class="more-link" href="https://www.linkedin.com/in/deniardi4/" target="_blank"><i class="fas fa-external-link-alt"></i>Temukan lebih di Linkedin</a></p> 
-                            
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                
+                                <blockquote class="quote">
+                                    <p><i class="fas fa-quote-left"></i>Deni menunjukkan perkembangan yang signifikan,
+                                        untuk build app, memiliki semangat belajar yang tinggi dan rasa ingin tahu yang
+                                        kuat.</p>
+                                </blockquote>
+                                <p class="source"><span class="name">Mas candra</span><br /><span class="title"></span>
+                                </p>
+                            </div>
+                            <!--//item-->
+
+                            <p><a class="more-link" href="https://www.linkedin.com/in/deniardi4/" target="_blank"><i
+                                        class="fas fa-external-link-alt"></i>Temukan lebih di Linkedin</a></p>
+
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+                <!--//section-->
+
                 <aside class="education aside section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Pendidikan</h2>
                         <div class="content">
-                            <div class="item"> 
-                                <a href="http://uty.ac.id/" target="_blank">                     
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Teknik Informatika (S1)</h3>
-                                <h4 class="university">Universitas Teknologi Yogyakarta <span class="year">(2015-2020)</span></h4></a>
-                            </div><!--//item-->
+                            <div class="item">
+                                <a href="http://uty.ac.id/" target="_blank">
+                                    <h3 class="title"><i class="fas fa-graduation-cap"></i> Teknik Informatika (S1)</h3>
+                                    <h4 class="university">Universitas Teknologi Yogyakarta <span
+                                            class="year">(2015-2020)</span></h4>
+                                </a>
+                            </div>
+                            <!--//item-->
                             <div class="item">
                                 <a href="http://www.sman1muntilan.sch.id/" target="_blank">
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> IPA</h3>
-                                <h4 class="university">SMA Negeri 1 Muntilan <span class="year">(2015)</span></h4></a>
-                            </div><!--//item-->
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                            
+                                    <h3 class="title"><i class="fas fa-graduation-cap"></i> IPA</h3>
+                                    <h4 class="university">SMA Negeri 1 Muntilan <span class="year">(2015)</span></h4>
+                                </a>
+                            </div>
+                            <!--//item-->
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+                <!--//section-->
+
                 <aside class="languages aside section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Bahasa</h2>
@@ -431,127 +598,171 @@
                             <ul class="list-unstyled">
                                 <li class="item">
                                     <span class="title"><strong>Indonesia:</strong></span>
-                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
-                                </li><!--//item-->
+                                    <span class="level">Native Speaker <br class="visible-xs" /><i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i> </span>
+                                </li>
+                                <!--//item-->
                                 <li class="item">
                                     <span class="title"><strong>English:</strong></span>
-                                    <span class="level">Native Speaker <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i></span>
-                                </li><!--//item-->
+                                    <span class="level">Native Speaker <br class="visible-sm visible-xs" /><i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i> <i class="fas fa-star-half"></i></span>
+                                </li>
+                                <!--//item-->
                             </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+                <!--//section-->
+
                 <!-- <aside class="blog aside section">
                     <div class="section-inner shadow-sm rounded"> -->
-                        <!-- <h2 class="heading">Latest Blog Posts</h2>
+                <!-- <h2 class="heading">Latest Blog Posts</h2>
                         <p>You can use Sascha Depold's <a href="https://github.com/sdepold/jquery-rss" target="_blank">jQuery RSS plugin</a> to pull in your blog post feeds.</p> -->
-                        <!-- <div class="content"> -->
+                <!-- <div class="content"> -->
 
-                        <!-- </div>//content -->
-                    <!-- </div>//section-inner -->
+                <!-- </div>//content -->
+                <!-- </div>//section-inner -->
                 <!-- </aside>//section-->
-                
+
                 <aside class="list music aside section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Favorit coding musik (AniSong)</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=qTSFl5O4acE" target="_blank">Never Coming Back | Violet Evergarden</a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=qTSFl5O4acE" target="_blank">I've Seen too Much | Naruto Shippuden</a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=qTSFl5O4acE" target="_blank">A Tiny Love | Sword Art Online</a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=qTSFl5O4acE" target="_blank">Everyday Life | Sword Art Online</a></li>
+                                <li><i class="fas fa-headphones"></i> <a
+                                        href="https://www.youtube.com/watch?v=qTSFl5O4acE" target="_blank">Never Coming
+                                        Back | Violet Evergarden</a></li>
+                                <li><i class="fas fa-headphones"></i> <a
+                                        href="https://www.youtube.com/watch?v=qTSFl5O4acE" target="_blank">I've Seen too
+                                        Much | Naruto Shippuden</a></li>
+                                <li><i class="fas fa-headphones"></i> <a
+                                        href="https://www.youtube.com/watch?v=qTSFl5O4acE" target="_blank">A Tiny Love |
+                                        Sword Art Online</a></li>
+                                <li><i class="fas fa-headphones"></i> <a
+                                        href="https://www.youtube.com/watch?v=qTSFl5O4acE" target="_blank">Everyday Life
+                                        | Sword Art Online</a></li>
                             </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+                <!--//section-->
+
                 <aside class="list conferences aside section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Kompetisi</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="far fa-calendar-alt"></i> <a href="https://www.jasaraharja.co.id/" target="_blank">Finalis Jasa Raharja Hackathon (2018)</a> (Yogyakarta, Indonesia)</li>
-                                <li><i class="far fa-calendar-alt"></i> <a href="http://elinfo-website.weebly.com/" target="_blank">Finalis ELINFO Mobile Apps Compt. UNY (2017)</a> (Yogyakarta, Indonesia)</li>
+                                <li><i class="far fa-calendar-alt"></i> <a href="https://www.jasaraharja.co.id/"
+                                        target="_blank">Finalis Jasa Raharja Hackathon (2018)</a> (Yogyakarta,
+                                    Indonesia)</li>
+                                <li><i class="far fa-calendar-alt"></i> <a href="http://elinfo-website.weebly.com/"
+                                        target="_blank">Finalis ELINFO Mobile Apps Compt. UNY (2017)</a> (Yogyakarta,
+                                    Indonesia)</li>
                             </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+                <!--//section-->
+
                 <aside class="credits aside section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Kredit</h2>
                         <div class="content">
                             <ul class="list-unstyled pb-2">
-                                <li><a href="https://getbootstrap.com/" target="_blank"><i class="fas fa-external-link-alt"></i>Bootstrap</a></li>
-                                <li><a href="https://fortawesome.github.io/Font-Awesome/" target="_blank"><i class="fas fa-external-link-alt"></i>FontAwesome</a></li>
-                                <li><a href="https://jquery.com/" target="_blank"><i class="fas fa-external-link-alt"></i>jQuery</a></li>
-                                <li><a href="https://github.com/IonicaBizau/github-calendar" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub Calendar Plugin</a></li>
-                                <li><a href="https://caseyscarborough.com/projects/github-activity/" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub Activity Stream</a></li>
-                                <li><a href="https://github.com/sdepold/jquery-rss" target="_blank"><i class="fas fa-external-link-alt"></i>jQuery RSS</a></li>
-                                <li><a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-portfolio-theme-for-web-developers/" target="_blank"><i class="fas fa-external-link-alt"></i>Bootstrap 4 portfolio by Xiaoying Riley 3rd Wave Media</a></li>
+                                <li><a href="https://getbootstrap.com/" target="_blank"><i
+                                            class="fas fa-external-link-alt"></i>Bootstrap</a></li>
+                                <li><a href="https://fortawesome.github.io/Font-Awesome/" target="_blank"><i
+                                            class="fas fa-external-link-alt"></i>FontAwesome</a></li>
+                                <li><a href="https://jquery.com/" target="_blank"><i
+                                            class="fas fa-external-link-alt"></i>jQuery</a></li>
+                                <li><a href="https://github.com/IonicaBizau/github-calendar" target="_blank"><i
+                                            class="fas fa-external-link-alt"></i>GitHub Calendar Plugin</a></li>
+                                <li><a href="https://caseyscarborough.com/projects/github-activity/" target="_blank"><i
+                                            class="fas fa-external-link-alt"></i>GitHub Activity Stream</a></li>
+                                <li><a href="https://github.com/sdepold/jquery-rss" target="_blank"><i
+                                            class="fas fa-external-link-alt"></i>jQuery RSS</a></li>
+                                <li><a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-portfolio-theme-for-web-developers/"
+                                        target="_blank"><i class="fas fa-external-link-alt"></i>Bootstrap 4 portfolio by
+                                        Xiaoying Riley 3rd Wave Media</a></li>
                             </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-              
-            </div><!--//secondary-->    
-        </div><!--//row-->
-    </div><!--//masonry-->
-    
-    <!-- ******FOOTER****** --> 
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+                <!--//section-->
+
+            </div>
+            <!--//secondary-->
+        </div>
+        <!--//row-->
+    </div>
+    <!--//masonry-->
+
+    <!-- ******FOOTER****** -->
     <footer class="footer">
         <div class="container text-center">
-                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-                <small class="copyright">Kamu mengakses dengan</a> 
+            <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright">Kamu mengakses dengan</a>
                 <i class="fas fa-heart">
                 </i>
                 2020
-                </small>
-        </div><!--//container-->
-    </footer><!--//footer-->
- 
-    <!-- Javascript -->   
-    <!--modal-->  
+            </small>
+        </div>
+        <!--//container-->
+    </footer>
+    <!--//footer-->
+
+    <!-- Javascript -->
+    <!--modal-->
     <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
+        // Get the modal
+        var modal = document.getElementById("myModal");
 
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
 
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
 
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-    modal.style.display = "block";
-    }
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
 
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-    modal.style.display = "none";
-    }
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
 
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-    }
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
     </script>
     <!---->
     <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
     <!-- github calendar plugin -->
     <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
     <!-- github activity plugin -->
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
     <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
     <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
+    <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
-</html> 
 
+</html>
