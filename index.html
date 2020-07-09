@@ -131,6 +131,27 @@
             color: white;
         }
     </style>
+    <style>
+        #Btntop {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #Btntop:hover {
+            background-color: #555;
+        }
+    </style>
 
 </head>
 
@@ -145,20 +166,28 @@
                 <h2 class="desc">Programmer/ Software Engineer</h2>
                 <ul class="social list-inline">
                     <li class="list-inline-item"><a href="https://twitter.com/deniardi4" target="_blank"><i
+                                data-toggle="tooltip" data-placement="top" title="Twitter"
                                 class="fab fa-twitter"></i></a></li>
                     <li class="list-inline-item"><a href="https://www.linkedin.com/in/deniardi4/" target="_blank"><i
+                                data-toggle="tooltip" data-placement="top" title="LinkedIn"
                                 class="fab fa-linkedin-in"></i></a></li>
                     <li class="list-inline-item"><a href="https://github.com/deniardiyanto" target="_blank"><i
+                                data-toggle="tooltip" data-placement="top" title="Github"
                                 class="fab fa-github-alt"></i></a></li>
                     <li class="list-inline-item"><a href="https://stackoverflow.com/users/13711960/deni"
-                            target="_blank"><i class="fab fa-stack-overflow"></i></a></li>
+                            data-toggle="tooltip" data-placement="top" title="Stackoverflow" target="_blank"><i
+                                class="fab fa-stack-overflow"></i></a></li>
                     <li class="list-inline-item last-item"><a
                             href="https://familyministry.church/wp-content/uploads/2018/10/not-yet.png"
-                            target="_blank"><i class="fab fa-codepen"></i></a></li>
+                            target="_blank"><i data-toggle="tooltip" data-placement="top" title="Codepen"
+                                class="fab fa-codepen"></i></a></li>
                 </ul>
             </div>
             <!--//profile-->
             <a class="btn btn float-right" id="myBtn"><i class="fas fa-paper-plane"></i> Kontak saya</a>
+            <a class="btn btn float-right" href="#pengalaman"><i class="fas fa-laptop-code"></i>
+                Pengalaman</a>
+            <a class="btn btn float-right" href="#project"><i class="fas fa-tasks"></i> Project</a>
             <!--modal-->
             <!-- The Modal -->
 
@@ -212,7 +241,7 @@
 
 
 
-                <section class="latest section">
+                <section class="latest section" id="project">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Project Terakhir</h2>
                         <div class="content">
@@ -524,7 +553,7 @@
                 </section>
                 <!--//section-->
 
-                <section class="experience section">
+                <section class="experience section" id="pengalaman">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Pengalaman kerja</h2>
                         <div class="content">
@@ -897,6 +926,7 @@
                 2020
             </small>
         </div>
+        <button onclick="topFunction()" id="Btntop" title="Go to top">Top</button>
         <!--//container-->
     </footer>
     <!--//footer-->
@@ -942,6 +972,29 @@
     <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("Btntop");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 
 </html>
