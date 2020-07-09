@@ -29,6 +29,7 @@
 
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
 
     <!--modal style-->
     <style>
@@ -181,13 +182,9 @@
                             href="https://familyministry.church/wp-content/uploads/2018/10/not-yet.png"
                             target="_blank"><i data-toggle="tooltip" data-placement="top" title="Codepen"
                                 class="fab fa-codepen"></i></a></li>
-                </ul>
+                </ul><br><br>
             </div>
             <!--//profile-->
-            <a class="btn btn float-right" id="myBtn"><i class="fas fa-paper-plane"></i> Kontak saya</a>
-            <a class="btn btn float-right" href="#pengalaman"><i class="fas fa-laptop-code"></i>
-                Pengalaman</a>
-            <a class="btn btn float-right" href="#project"><i class="fas fa-tasks"></i> Project</a>
             <!--modal-->
             <!-- The Modal -->
 
@@ -210,15 +207,38 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
             <!---->
         </div>
         <!--//container-->
     </header>
     <!--//header-->
-
+    <div class="container sections-wrapper">
+        <div class="row justify-content-center">
+            <div class="col-10 info-panel">
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="assets/images/plan/work.png" alt="Employee" class="img-fluid float-left">
+                        <a href="#pengalaman">
+                            <h4>Pengalaman</h4>
+                        </a>
+                    </div>
+                    <div class="col-lg">
+                        <img src="assets/images/plan/project.png" alt="Employee" class="img-fluid float-left">
+                        <a href="#project">
+                            <h4>Project</h4>
+                        </a>
+                    </div>
+                    <div class="col-lg">
+                        <img src="assets/images/plan/skill.png" alt="Employee" class="img-fluid float-left">
+                        <a href="#skill">
+                            <h4>Skill</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container sections-wrapper">
         <div class="row">
             <div class="primary col-lg-8 col-12">
@@ -614,6 +634,10 @@
                                     Indonesia</li>
                                 <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a
                                         href="mailto:deniardi4@gmail.com">deniardi4@gmail.com</a></li>
+                                <li><button type="button" class="btn btn-outline-primary" id="myBtn"><i
+                                            style='font-size:24px;color:rgba(99, 238, 99, 0.945)'
+                                            class="fab fa-whatsapp" aria-hidden="true"></i>Kontak
+                                        saya</button></li>
                                 <a class="btn btn-cta-primary btn-download"
                                     href="https://drive.google.com/file/d/1wXl_2Drfeh-iCHNEsDZmJkUN6zP3sgjG/view?usp=sharing"
                                     target="_blank"><i class="fas fa-download"></i> Download Berkas CV</a>
@@ -627,7 +651,7 @@
 
                 <aside class="skills aside section">
                     <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Keterampilan</h2>
+                        <h2 class="heading" id="skill">Keterampilan</h2>
                         <div class="content">
                             <p class="intro">
                                 Adapun kemampuan yang saya miliki ditampilkan pada draft berikut, meliputi Hardskill
